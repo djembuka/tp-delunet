@@ -1,0 +1,14 @@
+// start /components/search/
+
+link( rel="stylesheet", href="/components/search/style.css" )
+script( src="/components/search/script.js" )
+
+#slrSearchElem
+    .slr-search-wrapper
+        .slr-search-container
+            form( action='' method="" )
+                span.slr-search-icon( style=" background-image: url( '/template/images/headers/header_delunet/search.svg' );" )
+                input#title-search-input.slr-search-input(type='search', name='q', size='23', maxlength='50', autocomplete='off' value='' placeholder="Поиск" )
+                input(name='s', type='hidden', value='')
+
+// end /components/search/

@@ -1,0 +1,122 @@
+// start /components/header_delunet/
+
+link( rel="stylesheet", href="/components/header_delunet/style.css" )
+script( src="/components/header_delunet/script.js" )
+
+#sellerHeaderDelunet
+  header.bj-page-header.i-load
+    section.bj-page-header__top
+      .container-fluid
+        .row
+        
+          .col-md-9.col-sm-6.col-xs-6.bj-logo-space
+            span.bj-logo
+              img( src='/template/images/headers/header_delunet/delunetlogowhite.svg' height='65' width='200' alt='' )
+              
+            .bj-top-text.hidden-sm.hidden-xs
+                .header-text Бутик de Lunettes. Москва, ТРЦ «Европейский»
+                    br
+                    a( href="tel:+79854595055") +7 (985) 459-50-55
+              
+          .col-md-3.col-sm-6.col-xs-6
+          
+            a.ob-menu-sandwich.bj-nav-button.visible-sm-inline-block.visible-xs-inline-block( href="#")
+              span.bj-menu-icon( style="background-image: url( '/template/images/headers/header_delunet/menu.svg' );" )
+          
+            #personal_menu.bj-personal.hidden-xs
+              //-button.bj-personal-icon( style="background-image: url( '/template/images/headers/header_delunet/profile.svg' );" )
+              .bj-personal-icon
+              
+            span#sale-basket-basket-line-container
+              a#bx_cart_block.bj-cart-icon( href="/personal/cart/" )
+                span.b-shopping-cart( style=" background-image: url( '/template/images/headers/header_delunet/basket.svg' );" )
+                span#bx_cart_num.bj-cart-icon__num 0
+            
+            span.bj-search-icon.hidden-xs( onclick="window.SlrSearch ? window.SlrSearch.show() : undefined;")
+              span( style=" background-image: url( '/template/images/headers/header_delunet/search.svg' );" )
+                
+            a.bj-earphone-icon(href='#', data-toggle='modal', data-target='#myModal' )
+              span( style="background-image: url( '/template/images/headers/header_delunet/phone.svg' );" )
+         
+    include header-dropdown
+    
+    section#cartDropdown.bj-page-header__cart-dropdown( data-url="/template/cart-droprown-ajax.html" data-method="GET" )
+      .i-relative
+          article
+            .container-fluid
+            .progress
+              .indeterminate
+    
+    include header-user-dropdown
+            
+    #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+      .modal-dialog(role='document')
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+            |                   
+            h2#myModalLabel.modal-title.text-center &Ncy;&acy;&shcy; &tcy;&iecy;&lcy;&iecy;&fcy;&ocy;&ncy;
+          |                 
+          .modal-body.text-center
+            .bj-text-x-large 8 (495) 212 85 06
+            |                   
+            .small &Pcy;&ncy;-&Vcy;&scy; 10-19
+          |                 
+          .modal-footer.text-center(style='display:none')
+            button.btn.btn-default(type='button') &Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &zcy;&vcy;&ocy;&ncy;&ocy;&kcy;
+  
+ul#sideNavPanel.side-nav
+  li.logo
+    span.bj-logo
+      img(width='143', alt='', src='', height='40', title='')
+  li.no-padding
+    .media
+      .media-body
+        ul
+          li
+            a(href='/personal/') admin admin
+          li
+            a(href='/?logout=yes') Выйти
+      .media-right
+        a(href='/personal/')
+          img(src='', width='64', height='48')
+  li.no-padding
+    ul
+      li
+        a(href='/personal/cart/')
+          | Корзина 
+          span.badge 3
+      li
+        a(href='/personal/index.php?SECTION=orders') Мои заказы
+  li.no-padding
+    ul
+      li
+        a(href='/search/') Поиск
+      li
+        a.bj-page-header__menu-link(href='/catalog/') Каталог
+      li
+        a(href='/campaign/') Акции
+      li
+        a(href='/journal/') Журнал
+      li
+        a(href='/lookbook/') LookBook
+      li
+        a(href='/about/') О магазине
+      li
+        a(href='/news/') Новости
+      li
+        a(href='/about/contacts/') Контакты
+      li
+        a(href='/about/vacancies/') Вакансии
+      li
+        a(href='/about/howto/') Как купить
+      li
+        a(href='/payment/') Оплата
+      li
+        a(href='/about/delivery/') Доставка
+      li
+        a(href='/about/guaranty/') Гарантии
+        
+include ../../components/tuner/button
+
+// end /components/header_delunet/
