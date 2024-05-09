@@ -4,23 +4,26 @@
 
     .slr-search
 
+        &-wrapper
+            padding 16px
+
         &-container
             position relative
 
         &-input
-            background #fff
+            background #FBF6F4
             border 0
-            border-radius 8px
+            border-radius 4px
             display block
-            height 64px
+            height 48px
             width 100%
             margin 0
-            padding 0 16px 0 64px
+            padding 0 48px
             box-sizing border-box
             outline none
             color #000
             font-family "Open Sans", Arial, sans-serif
-            font-size 16px
+            font-size 14px
             font-style normal
             font-weight 400
             line-height 18px
@@ -31,11 +34,55 @@
 
         &-icon
             position absolute
-            top 16px
-            left calc(32px + 16px)
+            top 8px
+            left 8px
             width 32px
             height 32px
             z-index 10
+
+        &-clear
+            position absolute
+            top 8px
+            right 8px
+            width 32px
+            height 32px
+            cursor pointer
+            opacity 0
+            pointer-events none
+            -webkit-transition opacity .3s ease
+            transition opacity .3s ease
+            z-index 10
+
+            &:before
+                content ''
+                position absolute
+                top 15px
+                right 2px
+                border-top 1px solid #000
+                width 24px
+                -webkit-transform rotate(45deg)
+                transform rotate(45deg)
+                z-index 10
+
+            &:after
+                content ''
+                position absolute
+                top 15px
+                right 2px
+                border-top 1px solid #000
+                width 24px
+                -webkit-transform rotate(-45deg)
+                transform rotate(-45deg)
+                z-index 10
+
+    &.slr-search--filled .slr-search-clear
+        opacity 1
+        pointer-events auto
+    
+        &:hover
+            opacity .7
+            
+
 
     @media(min-width 768px)
         
@@ -67,5 +114,20 @@
                 max-width 926px
                 margin 68px auto 0
                 padding 0 32px
+
+            &-input
+                background #fff
+                border-radius 8px
+                padding 0 16px 0 64px
+                font-size 16px
+                height 64px
+
+            &-icon
+                top 16px
+                left calc(32px + 16px)
+
+            &-clear
+                top 16px
+                right calc(32px + 16px)
 
             
