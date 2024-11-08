@@ -24,8 +24,10 @@ html( lang="ru" class="bx-no-touch" )
       h1 seller
     
     include ../modules/float-phone/include
-    include includes/footer.jade
     
     include includes/counters.jade
     
     link( rel="stylesheet" href="/template/colors.css" )
+
+    block footer
+      include ../components/footer_delunet/template
