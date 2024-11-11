@@ -11,7 +11,7 @@ script( src="/components/header_delunet/script.js" )
         
           .col-md-9.col-sm-6.col-xs-6.bj-logo-space
             span.bj-logo
-              img( src='/template/images/headers/header_delunet/delunetlogowhite.svg' height='65' width='200' alt='' )
+              img( src='/images/headers/header_delunet/delunetlogowhite.svg' height='65' width='200' alt='' )
               
             .bj-top-text.hidden-sm.hidden-xs
                 .header-text Бутик de Lunettes. Москва, ТРЦ «Европейский»
@@ -21,25 +21,25 @@ script( src="/components/header_delunet/script.js" )
           .col-md-3.col-sm-6.col-xs-6
           
             a.ob-menu-sandwich.bj-nav-button.visible-sm-inline-block.visible-xs-inline-block( href="#")
-              span.bj-menu-icon( style="background-image: url( '/template/images/headers/header_delunet/menu.svg' );" )
+              span.bj-menu-icon( style="background-image: url( '/images/headers/header_delunet/menu.svg' );" )
           
             #personal_menu.bj-personal.hidden-xs
-              //-button.bj-personal-icon( style="background-image: url( '/template/images/headers/header_delunet/profile.svg' );" )
+              //-button.bj-personal-icon( style="background-image: url( '/images/headers/header_delunet/profile.svg' );" )
               .bj-personal-icon
               
             span#sale-basket-basket-line-container
               a#bx_cart_block.bj-cart-icon( href="/personal/cart/" )
-                span.b-shopping-cart( style=" background-image: url( '/template/images/headers/header_delunet/basket.svg' );" )
+                span.b-shopping-cart( style=" background-image: url( '/images/headers/header_delunet/basket.svg' );" )
                 span#bx_cart_num.bj-cart-icon__num 0
             
-            span.bj-search-icon.hidden-xs( onclick="window.SlrSearch ? window.SlrSearch.show() : void(0);" style="background-image: url( '/template/images/headers/header_delunet/search.svg' );" )
+            span.bj-search-icon.hidden-xs( onclick="window.SlrSearch ? window.SlrSearch.show() : void(0);" style="background-image: url( '/images/headers/header_delunet/search.svg' );" )
              
             a.bj-earphone-icon(href='#', data-toggle='modal', data-target='#myModal' )
-              span( style="background-image: url( '/template/images/headers/header_delunet/phone.svg' );" )
+              span( style="background-image: url( '/images/headers/header_delunet/phone.svg' );" )
          
     include header-dropdown
     
-    section#cartDropdown.bj-page-header__cart-dropdown( data-url="/template/cart-droprown-ajax.html" data-method="GET" )
+    section#cartDropdown.bj-page-header__cart-dropdown( data-url="/cart-droprown-ajax.html" data-method="GET" )
       .i-relative
           article
             .container-fluid

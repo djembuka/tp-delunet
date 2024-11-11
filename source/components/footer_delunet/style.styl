@@ -11,6 +11,9 @@
   a:focus
     color #fff
 
+  p
+    margin-bottom 16px
+
   &__top
     display flex
     align-items center
@@ -28,11 +31,76 @@
     gap 16px
     grid-template-columns repeat(4, 1fr)
 
+    img
+      margin 0 auto
+
+  &__open-btn
+    display inline-flex
+    border 1px solid #fff
+    height 30px
+    border-radius 15px
+    color #fff
+    padding 0 16px
+    align-items center
+    margin 16px 0
+
+  &__tel
+    font-size 24px
+    margin-bottom 16px
+
   &__menu
     display grid
     gap 16px
     line-height20px
 
-#footerMap
-  height 200px
-  border-radius 8px
+  &__map
+    position relative
+    border-radius 8px
+    overflow hidden
+
+    #footerMap
+      height 200px
+      border-radius 8px
+
+      @media(max-width 767px)
+        height 320px
+
+    &-button
+      position absolute
+      bottom 16px
+      left 50%
+      -webkit-transform translateX(-50%)
+      transform translateX(-50%)
+      background-color #D4A48EE5
+      background-position center
+      color #fff
+      font-family Overpass, Arial, sans-serif
+      font-size 14px
+      font-style normal
+      font-weight 400
+      padding 0 16px
+      display flex
+      justify-content center
+      align-items center
+      height 30px
+      border-radius 15px
+      cursor pointer
+
+      span:first-child
+        display block
+
+      span:last-child
+        display none
+
+    &.bj-page-footer-delunet__map--show
+      
+      .bj-page-footer-delunet__map-button
+
+        span:first-child
+          display none
+
+        span:last-child
+          display block
+
+      #footerMap
+        height 500px
