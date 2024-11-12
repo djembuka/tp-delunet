@@ -14,12 +14,11 @@ window.addEventListener('load', () => {
   }
 
   //mobile
+  window.addEventListener('load', fetchMobileFooter);
   window.addEventListener('resize', fetchMobileFooter);
   window.fetchMobileFooterFlag;
 
   const menuAjaxPath = '/markup/components/footer_delunet/mobile.html';
-
-  fetchMobileFooter();
 
   function fetchMobileFooter() {
     if (
@@ -33,26 +32,11 @@ window.addEventListener('load', () => {
           var result = await response.text();
           var footer = document.querySelector('footer.bj-page-footer-delunet');
 
-          var div = document.createElement('div');
-          div.innerHTML = result;
-
-          var footerNew = div.querySelector('footer');
-          var script = footerNew.querySelector('script');
-          var src = script.src;
-          var type = script.type;
-          var charset = script.charset;
-          var dataSkipMmoving = script['data-skip-moving'];
-
-          var scriptNew = document.createElement('script');
-          scriptNew.src = src;
-          scriptNew.type = type;
-          scriptNew.charset = charset;
-          scriptNew['data-skip-moving'] = dataSkipMmoving;
-
           if (footer) {
-            footer.after(footerNew);
-            var s = footerNew.querySelector('script');
-            s.after(scriptNew);
+            footer.innerHTML = result;
+            document.querySelector(
+              '.bj-page-footer-delunet iframe'
+            ).style.transition = 'height .3s ease';
           }
         } catch (err) {
           throw err;

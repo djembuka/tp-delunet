@@ -8,6 +8,7 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
     <link href="/template/placeholders/main.css" rel="stylesheet">
     <link rel="stylesheet" href="/template/template_styles.css">
+    <link rel="stylesheet" href="/local/templates/bejet_seller-1.6.0/template_styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&amp;amp;subset=cyrillic-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&amp;amp;subset=cyrillic-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;amp;subset=cyrillic-ext" rel="stylesheet">
@@ -23,20 +24,22 @@
     <!-- start /components/header_delunet/-->
     <link rel="stylesheet" href="/components/header_delunet/style.css">
     <script src="/components/header_delunet/script.js"></script>
+    <link rel="stylesheet" href="/markup/components/header_delunet/style.css">
+    <script src="/markup/components/header_delunet/script.js"></script>
     <div id="sellerHeaderDelunet">
       <header class="bj-page-header i-load">
         <section class="bj-page-header__top">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-9 col-sm-6 col-xs-6 bj-logo-space"><span class="bj-logo"><img src="/template/images/headers/header_delunet/delunetlogowhite.svg" height="65" width="200" alt=""></span>
+              <div class="col-md-9 col-sm-6 col-xs-6 bj-logo-space"><span class="bj-logo"><img src="/markup/images/headers/header_delunet/delunetlogowhite.svg" height="65" width="200" alt=""></span>
                 <div class="bj-top-text hidden-sm hidden-xs">
                   <div class="header-text">Бутик de Lunettes. Москва, ТРЦ «Европейский»<br><a href="tel:+79854595055">+7 (985) 459-50-55</a></div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-6"><a href="#" class="ob-menu-sandwich bj-nav-button visible-sm-inline-block visible-xs-inline-block"><span style="background-image: url( '/template/images/headers/header_delunet/menu.svg' );" class="bj-menu-icon"></span></a>
+              <div class="col-md-3 col-sm-6 col-xs-6"><a href="#" class="ob-menu-sandwich bj-nav-button visible-sm-inline-block visible-xs-inline-block"><span style="background-image: url( '/markup/images/headers/header_delunet/menu.svg' );" class="bj-menu-icon"></span></a>
                 <div id="personal_menu" class="bj-personal hidden-xs">
                   <div class="bj-personal-icon"></div>
-                </div><span id="sale-basket-basket-line-container"><a id="bx_cart_block" href="/personal/cart/" class="bj-cart-icon"><span style=" background-image: url( '/template/images/headers/header_delunet/basket.svg' );" class="b-shopping-cart"></span><span id="bx_cart_num" class="bj-cart-icon__num">0</span></a></span><span onclick="window.SlrSearch ? window.SlrSearch.show() : void(0);" style="background-image: url( '/template/images/headers/header_delunet/search.svg' );" class="bj-search-icon hidden-xs"></span><a href="#" data-toggle="modal" data-target="#myModal" class="bj-earphone-icon"><span style="background-image: url( '/template/images/headers/header_delunet/phone.svg' );"></span></a>
+                </div><span id="sale-basket-basket-line-container"><a id="bx_cart_block" href="/personal/cart/" class="bj-cart-icon"><span style=" background-image: url( '/markup/images/headers/header_delunet/basket.svg' );" class="b-shopping-cart"></span><span id="bx_cart_num" class="bj-cart-icon__num">0</span></a></span><span onclick="window.SlrSearch ? window.SlrSearch.show() : void(0);" style="background-image: url( '/markup/images/headers/header_delunet/search.svg' );" class="bj-search-icon hidden-xs"></span><a href="#" data-toggle="modal" data-target="#myModal" class="bj-earphone-icon"><span style="background-image: url( '/markup/images/headers/header_delunet/phone.svg' );"></span></a>
               </div>
             </div>
           </div>
@@ -164,7 +167,7 @@
             </article>
           </div>
         </section>
-        <section id="cartDropdown" data-url="/template/cart-droprown-ajax.html" data-method="GET" class="bj-page-header__cart-dropdown">
+        <section id="cartDropdown" data-url="/cart-droprown-ajax.html" data-method="GET" class="bj-page-header__cart-dropdown">
           <div class="i-relative">
             <article>
               <div class="container-fluid"></div>
@@ -352,30 +355,6 @@
     <div id="b-float-phone">
       <div class="b-float-phone__bg"></div><span class="b-float-phone__content"><span class="bj-footer-earphone-icon"></span><span class="b-float-phone__text">+7 499 35 007 98</span></span>
     </div>
-    <footer class="b-footer">
-      <div class="b-container">
-        <div class="b-row">
-          <div class="b-col-sm-4"></div>
-          <div class="b-col-sm-4"></div>
-          <div class="b-col-sm-4"></div>
-        </div>
-      </div>
-    </footer>
-    <div id="circlePreloader">
-      <div class="preloader-wrapper active">
-        <div class="spinner-layer">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div>
-          <div class="gap-patch">
-            <div class="circle"></div>
-          </div>
-          <div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Yandex.Metrika counter-->
     <script type="text/javascript">
       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -393,5 +372,50 @@
     </noscript>
     <!-- /Yandex.Metrika counter-->
     <link rel="stylesheet" href="/template/colors.css">
+    <!-- start /components/footer_delunet/-->
+    <link rel="stylesheet" href="/components/footer_delunet/style.css">
+    <script src="/components/footer_delunet/script.js"></script>
+    <link rel="stylesheet" href="/markup/components/footer_delunet/style.css">
+    <script src="/markup/components/footer_delunet/script.js"></script>
+    <footer class="bj-page-footer-delunet">
+      <div class="container-fluid">
+        <div class="bj-page-footer-delunet__top"><a href="/"><img src="/markup/images/headers/header_delunet/delunetlogowhite.svg" height="65" width="200" alt=""></a>
+          <div class="bj-page-footer-delunet__top-right">
+            <div class="yandex"><img src="/markup/images/footer/yandex-metrika.png" alt=""></div>
+            <div class="bj-page-footer-delunet__payment"><img src="/markup/images/footer/mastercard-logo.svg" alt=""><img src="/markup/images/footer/dlyami-logo.svg" alt=""><img src="/markup/images/footer/mir-logo.svg" alt=""><img src="/markup/images/footer/sber-logo.svg" alt=""></div>
+          </div>
+        </div>
+        <hr class="i-size-M">
+        <div class="row"> 
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <p><b>Адрес магазина:</b> Москва, пл. Киевского вокзала, 2, ТРЦ «Европейский», 1 этаж</p>
+                <p><b>График работы:</b> ежедневно с 10:00 до 22:00</p>
+                <p>8 (985) 459 50 55</p>
+                <p>info@delunet.ru</p>
+                <p>Copyright 2024 © Бутик de Lunettes</p>
+              </div>
+              <div class="col-sm-6">
+                <p>ИП Антонюк Ольга Евгеньевна<br>ОГРНИП: 323508100604185<br>ИНН: 026825974304</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-4 bj-page-footer-delunet__menu"><a href>О магазине</a><a href>Адрес</a><a href>Новости </a><a href>Контакты</a></div>
+              <div class="col-sm-4 bj-page-footer-delunet__menu"><a href>Как купить</a><a href>Оплата</a><a href>Доставка </a><a href>Гарантия</a><a href>Соглашение</a><a href>Конфиденцильность</a></div>
+              <div class="col-sm-4 bj-page-footer-delunet__menu"><a href>Солнцезащитные очки</a><a href>Оправа</a><a href>Изготовление очков</a><a href>Ремонт и сервисное обслуживание</a></div>
+            </div>
+          </div>
+        </div>
+        <hr class="i-size-M">
+        <div class="bj-page-footer-delunet__map">
+          <div class="bj-page-footer-delunet__map-button"><span>Подробнее</span><span>Скрыть</span></div>
+          <script type="text/javascript" charset="utf-8" async data-skip-moving="true" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9a3b4f3b35152e97515bde9f309e6ceb807511f879176a1a71715f3e7bae58ca&amp;amp;width=100%&amp;amp;height=320&amp;amp;lang=ru_RU&amp;amp;scroll=false"></script>
+        </div>
+      </div>
+    </footer>
+    <!-- end /components/footer_delunet/-->
   </body>
 </html>

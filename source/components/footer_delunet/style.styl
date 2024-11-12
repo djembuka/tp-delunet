@@ -6,6 +6,18 @@
   color #fff
   font-size 14px
 
+  &--desktop
+    display block
+
+    @media(max-width 767px)
+      display none
+
+  &--mobile
+    display none
+
+    @media(max-width 767px)
+      display block
+
   a,
   a:hover,
   a:focus
@@ -58,7 +70,7 @@
     border-radius 8px
     overflow hidden
 
-    #footerMap
+    iframe
       height 200px
       border-radius 8px
 
@@ -102,5 +114,5 @@
         span:last-child
           display block
 
-      #footerMap
+      iframe
         height 500px
